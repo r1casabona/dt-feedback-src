@@ -1,0 +1,28 @@
+###############################################################
+#
+# 	Configurações gerais da aplicação.
+#
+# 	As configurações são sobrepostas pelas feitas nos arquivos
+#	de configuração dos ambientes.
+#
+###############################################################
+
+
+# Variável de ambiente $ deve estar configurada no SO com o profile de deploy do sistema: dev / hom / prod.
+
+server:
+  port : 8081
+
+spring:
+  profiles:
+    active:
+      #${VCP31_AMBIENTE}
+      dev_embedded
+      #dev
+      #hom
+      #prod
+
+proxy:
+  host:
+  port:
+
